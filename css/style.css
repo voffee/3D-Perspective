@@ -23,7 +23,11 @@ body {
     border: 1px solid #CCC;
     margin: 40px;
     perspective: 600px;
-    /* transform: perspective(600px) rotateY(45deg); */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
 }
 
 .panel {
@@ -31,4 +35,5 @@ body {
     height: 100%;
     background-color: blue;
     transform: rotateY(45deg);
+    /* transform: perspective(600px) rotateY(45deg); */
 }
